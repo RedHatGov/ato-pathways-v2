@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { PageSection, Title } from '@patternfly/react-core';
+import { Accordion, AccordionItem, AccordionContent, AccordionToggle } from '@patternfly/react-core';
+
 
 const Dashboard: React.FunctionComponent<any> = (props) => {
   return (
@@ -10,3 +12,5 @@ const Dashboard: React.FunctionComponent<any> = (props) => {
 }
 
 export { Dashboard };
+
+
