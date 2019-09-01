@@ -4,6 +4,7 @@ import { Alert, PageSection } from '@patternfly/react-core';
 import { DynamicImport } from '@app/DynamicImport';
 import { accessibleRouteChangeHandler } from '@app/utils/utils';
 import { Dashboard } from '@app/Dashboard/Dashboard';
+import { Products } from '@app/Products/Products';
 import { NotFound } from '@app/NotFound/NotFound';
 import DocumentTitle from 'react-document-title';
 import { LastLocationProvider, useLastLocation } from 'react-router-last-location';
@@ -76,6 +77,15 @@ const routes: IAppRoute[] = [
     label: 'Dashboard',
     path: '/',
     title: 'Main Dashboard Title'
+  },
+  {
+    component: Products,
+    exact: true,
+    icon: null,
+    isAsync: true,
+    label: 'Products',
+    path: '/products',
+    title: 'Main Products Title'
   },
   {
     component: Support,
